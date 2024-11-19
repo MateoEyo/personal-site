@@ -5,7 +5,7 @@ import Landing from './landing';
 
 export function App() {
   return (
-    <div className='flex flex-col items-center justify-center w-full h-screen'>
+    <div className='flex flex-col'>
       <Landing title="resume" />
       <About />
       <Experience />
