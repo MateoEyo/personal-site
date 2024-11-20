@@ -1,6 +1,6 @@
 import { BasicButton } from "./basic";
 
-export function Github({ }: {  }) {
+export function Github() {
     return (
         <BasicButton label="Github" />
     );
