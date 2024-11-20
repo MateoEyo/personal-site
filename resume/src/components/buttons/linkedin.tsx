@@ -1,6 +1,6 @@
 import { BasicButton } from "./basic";
 
-export function LinkedIn({ }: {  }) {
+export function LinkedIn() {
     return (
         <BasicButton label="LinkedIn" />
     );
