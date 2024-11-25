@@ -1,0 +1,29 @@
+.about {
+    display: grid;
+}
+
+@media (min-width: 481px) {
+    .about {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .about-text {
+        padding-top: 3rem; /* 48px */
+        padding-bottom: 3rem; /* 48px */
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        grid-template-rows: auto minmax(0, 1fr);
+    }
+
+    .about-header {
+        padding-top: 1rem;
+    }
+
+    .about-text {
+        padding-top: 1rem; /* 48px */
+        padding-bottom: 1rem; /* 48px */
+    }
+}

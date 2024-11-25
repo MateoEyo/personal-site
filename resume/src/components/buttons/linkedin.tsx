@@ -2,7 +2,9 @@ import { BasicButton } from "./basic";
 
 export function LinkedIn() {
     return (
-        <BasicButton label="LinkedIn" />
+        <a href="https://www.linkedin.com/in/mateo-matic/" target="_blank" rel="noopener noreferrer">
+            <BasicButton label="LinkedIn" image="/linkedin-logo.png" imageAlt="LinkedIn logo"/>
+        </a>
     );
 }
 

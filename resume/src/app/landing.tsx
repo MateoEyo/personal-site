@@ -9,8 +9,8 @@ export function Landing({ title }: { title: string }) {
       <h1 className="text-7xl p-4 font-bold text-center">
         Hi, I'm Mateo
       </h1>
-      <p className="text-xl w-6/12 p-4 text-center">
-        Thanks for coming to my website! I'm a software development lifecycle expert that's passionate about learning new things, playing instruments, telling stories through table-top roleplay, and cooking.
+      <p className="text-xl w-9/12 p-4 text-center">
+        Thank you for coming to my website! I'm excited to tell you a bit about myself.
       </p>
       <div className="grid grid-cols-2 gap-4 p-4">
         <Github />
