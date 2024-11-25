@@ -2,6 +2,16 @@
     display: grid;
 }
 
+.about-text {
+    font-weight: 300;
+    font-size: 1.125rem; /* 18px */
+    
+}
+
+.about-para {
+    padding-bottom: 1rem;
+}
+
 @media (min-width: 481px) {
     .about {
         grid-template-columns: auto minmax(0, 1fr);
