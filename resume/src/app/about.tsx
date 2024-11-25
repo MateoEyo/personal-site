@@ -1,6 +1,6 @@
 export function About({ }: {  }) {
     return (
-        <div className="about bg-sky-400/100 items-center">
+        <div id="aboutSection" className="about bg-sky-400/100 items-center">
             <h1 className="about-header text-3xl font-bold text-center px-8">
                 <span className="bg-[#DFC5FE] px-2"> about me </span>
             </h1>
