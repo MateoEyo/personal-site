@@ -31,7 +31,8 @@ export function Experience() {
             Software Engineering
           </p>
           <p>
-            I have used <span className="font-semibold">Python</span> to develop small applications that allows uers to transform data  
+            I have used Python, Java, and C++ throughout my career to develop internal tools, write automation, and implement projects 
+            in my college career. I am using this site as a way to teach myself more about Web Development with a focus in React development.
           </p>
         </p>
       </div>
