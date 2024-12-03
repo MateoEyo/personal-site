@@ -1,11 +1,11 @@
 export function Contact({ }: {  }) {
     return (
-    <div className="bg-stone-500/100">
-      <h1 className="text-5xl">
-      Contact
+    <div className="resumeBasic bg-white">
+      <h1 className="resumeBasic-header">
+        contact
       </h1>
-      <p>
-      Contact text
+      <p className="resumeBasic-text">
+        Contact text
       </p>
     </div>
     );
