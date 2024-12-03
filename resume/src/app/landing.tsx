@@ -13,10 +13,10 @@ export function Landing({ title }: { title: string }) {
   return (
     <header className="bg-[#DFC5FE] flex flex-col h-screen w-full items-center justify-center">
       <h1 className="text-7xl p-4 pb-24 font-bold text-center">
-        Hi, I'm Mateo
+        <span className="header-background">Hi, I'm Mateo</span>
       </h1>
       <p className="text-2xl w-9/12 p-4 pb-24 text-center font-semibold">
-        Thank you for coming to my website. I'm using this page to learn more about web development.
+        <span className="p-2">Welcome to my page, let tell you a bit about myself.</span>
       </p>
       <div className="grid grid-cols-2 gap-4 p-4">
         <Github />

@@ -6,7 +6,7 @@ export interface BasicButtonProps {
 
 export function BasicButton({ label, image, imageAlt }: BasicButtonProps) {
     return (
-        <button className="flex gap-2 border-2 border-black hover:bg-rose-500 text-black font-bold py-2 px-4 rounded min-w-36 justify-center">
+        <button className="flex gap-2 border-2 min-w-36 justify-center py-2 px-4 border-black hover:bg-white text-black font-bold rounded transition-all duration-300">
             {image && (
                 <img src={image} alt={imageAlt} height={24} width={24} />
             )}
