@@ -14,7 +14,7 @@ export function Contact() {
             <div className="pt-2">
               <input 
                 className="rounded-md pl-3 py-1 outline outline-1 -outline-offset-1 outline-gray-300" 
-                id="contact-subject-line" name="contact-subject-line" type="text" placeholder="email@example.com" />
+                id="contact-email" name="contact-email" type="text" placeholder="email@example.com" />
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export function Contact() {
             <div className="pt-2">
               <input 
                 className="rounded-md pl-3 py-1 outline outline-1 -outline-offset-1 outline-gray-300 w-5/6" 
-                id="contact-subject-line" name="contact-subject-line" type="text" placeholder="The message of this email" />
+                id="contact-message" name="contact-message" type="text" placeholder="The message of this email" />
             </div>
           </div>
 
