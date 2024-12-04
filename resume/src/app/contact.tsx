@@ -1,11 +1,12 @@
-export function Contact({ }: {  }) {
+export function Contact() {
     return (
     <div className="resumeBasic bg-white">
       <h1 className="resumeBasic-header">
-        contact
+        <span className="bg-[#DFC5FE] px-2 pb-2"> contact </span>
       </h1>
       <div className="resumeBasic-text">
         <form>
+
           <div className="py-3">
             <label className="font-medium">
               Email
@@ -16,6 +17,7 @@ export function Contact({ }: {  }) {
                 id="contact-subject-line" name="contact-subject-line" type="text" placeholder="email@example.com" />
             </div>
           </div>
+
           <div className="py-3">
             <label className="font-medium">
               Subject Line
@@ -26,6 +28,7 @@ export function Contact({ }: {  }) {
                 id="contact-subject-line" name="contact-subject-line" type="text" placeholder="The subject of this email" />
             </div>
           </div>
+
           <div className="py-3">
             <label className="font-medium">
               Message
@@ -36,6 +39,7 @@ export function Contact({ }: {  }) {
                 id="contact-subject-line" name="contact-subject-line" type="text" placeholder="The message of this email" />
             </div>
           </div>
+
         </form>
       </div>
     </div>
