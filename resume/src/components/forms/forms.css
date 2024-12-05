@@ -1,0 +1,22 @@
+.formSubsection {
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+}
+
+.formLabel {
+    font-weight: 500;
+}
+
+.formInputSec {
+    padding-top: 0.5rem; /* 8px */
+}
+
+.formInput {
+    border-radius: 0.375rem; /* 6px */
+    padding-left: 0.75rem; /* 12px */
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: 1px;
+    outline-color: #d1d5db;
+    width: 50%;
+}
