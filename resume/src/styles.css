@@ -1,5 +1,6 @@
 @import './app/resumeBasic.css';
 @import './components/forms/forms.css';
+@import './components/buttons/buttons.css';
 
 @tailwind base;
 @tailwind components;
