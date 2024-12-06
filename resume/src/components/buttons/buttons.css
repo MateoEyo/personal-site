@@ -41,3 +41,20 @@
   background-color: #DFC5FE;
   transition-duration: 300ms;
 }
+
+/* Down arrow button */
+.btn-down-arrow {
+  position: absolute;
+  bottom: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 150ms;
+}
+
+.btn-down-arrow:hover {
+  transform: translateY(0.25rem);
+  transform: scale(1.4);
+  transition-duration: 300ms;
+}
