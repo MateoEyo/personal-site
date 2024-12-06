@@ -16,7 +16,7 @@ export function Landing({ title }: { title: string }) {
         <span className="header-background">Hi, I'm Mateo</span>
       </h1>
       <p className="text-2xl w-9/12 p-4 pb-24 text-center font-semibold">
-        <span className="p-2">Welcome to my page, let tell you a bit about myself.</span>
+        <span className="p-2">Welcome to my page, let me tell you a bit about myself.</span>
       </p>
       <div className="grid grid-cols-2 gap-4 p-4">
         <Github />
