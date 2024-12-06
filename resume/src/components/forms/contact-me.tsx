@@ -34,6 +34,12 @@ export function ContactMe() {
                     id="contact-message" name="contact-message" type="text" />
                 </div>
             </div>
+
+            <div className="formSubsection">
+            <button className="btn-contact">
+                Button
+            </button>
+            </div>
       </form>
     );
 }
