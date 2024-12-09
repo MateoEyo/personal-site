@@ -1,0 +1,11 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 0.50em; /* 4px */
+}
+
+.navbar-items {
+    display: inline;
+    padding: 0.50em; /* 4px */
+}
