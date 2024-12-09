@@ -2,18 +2,29 @@ export function Navbar() {
     return (
         <div className="navbar">
             <ul>
-                <li className="navbar-items">
-                    Home
-                </li>
-                <li className="navbar-items">
-                    About
-                </li>
-                <li className="navbar-items">
-                    Experience
-                </li>
-                <li className="navbar-items">
-                    Contact
-                </li>
+                <div className="nav-item-container">
+                    <li className="nav-item">
+                        Home
+                    </li>
+                </div>
+                
+                <div className="nav-item-container">
+                    <li className="nav-item">
+                        About
+                    </li>
+                </div>
+
+                <div className="nav-item-container">
+                    <li className="nav-item">   
+                        Experience
+                    </li>
+                </div>
+
+                <div className="nav-item-container">
+                    <li className="nav-item">
+                        Contact
+                    </li>
+                </div>
             </ul>
         </div>
     )
