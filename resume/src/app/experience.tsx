@@ -1,6 +1,6 @@
 export function Experience() {
     return (
-    <div className="resumeBasic ]">
+    <div id="experience" className="resumeBasic ]">
       <h1 className="resumeBasic-header">
         <span className="px-2 pb-2"> experience </span>
       </h1>

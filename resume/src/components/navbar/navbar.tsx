@@ -1,29 +1,39 @@
+import { scrollToSection } from "../functions/functions"
+
 export function Navbar() {
     return (
         <div className="navbar">
             <ul>
                 <div className="nav-item-container">
-                    <li className="nav-item">
-                        Home
-                    </li>
+                    <button>
+                        <li className="nav-item" onClick={() => scrollToSection('home')}>
+                            Home
+                        </li>
+                    </button>
                 </div>
                 
                 <div className="nav-item-container">
-                    <li className="nav-item">
-                        About
-                    </li>
+                    <button>
+                    <li className="nav-item" onClick={() => scrollToSection('about')}>
+                            About
+                        </li>
+                    </button>
                 </div>
 
                 <div className="nav-item-container">
-                    <li className="nav-item">   
-                        Experience
-                    </li>
+                    <button>
+                    <li className="nav-item" onClick={() => scrollToSection('experience')}>  
+                            Experience
+                        </li>
+                    </button>
                 </div>
 
                 <div className="nav-item-container">
-                    <li className="nav-item">
-                        Contact
-                    </li>
+                    <button>
+                    <li className="nav-item" onClick={() => scrollToSection('contact')}>
+                            Contact
+                        </li>
+                    </button>
                 </div>
             </ul>
         </div>
