@@ -6,3 +6,7 @@ document.getElementById(sectionID)?.scrollIntoView({
         behavior: 'smooth'
     });
 }
+
+export function toggleDarkMode() {
+    
+}

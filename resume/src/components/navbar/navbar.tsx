@@ -1,8 +1,13 @@
+import { Toggle } from "../buttons/buttons"
 import { scrollToSection } from "../functions/functions"
 
 export function Navbar() {
     return (
         <div className="navbar">
+            <div>
+
+            </div>
+
             <ul>
                 <div className="nav-item-container">
                     <button>
@@ -36,6 +41,10 @@ export function Navbar() {
                     </button>
                 </div>
             </ul>
+
+            <div>
+                <Toggle />
+            </div>
         </div>
     )
 };

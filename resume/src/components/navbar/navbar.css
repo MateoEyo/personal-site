@@ -1,4 +1,6 @@
 .navbar {
+    display: grid;
+    grid-template-columns: 15fr 70fr 15fr;
     position: fixed;
     width: 100%;
     text-align: center;
