@@ -1,8 +1,8 @@
 export function Experience() {
     return (
-    <div className="resumeBasic bg-[#DFC5FE]">
+    <div className="resumeBasic ]">
       <h1 className="resumeBasic-header">
-        <span className="bg-white px-2 pb-2"> experience </span>
+        <span className="px-2 pb-2"> experience </span>
       </h1>
       <div className="resumeBasic-text">
         <p className="resumeBasic-para">

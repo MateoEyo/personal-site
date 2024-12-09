@@ -11,7 +11,7 @@ export function Landing({ title }: { title: string }) {
   }
 
   return (
-    <header className="bg-[#DFC5FE] flex flex-col h-screen w-full items-center justify-center">
+    <header className="flex flex-col h-screen w-full items-center justify-center">
       <h1 className="text-7xl p-4 pb-24 font-bold text-center">
         <span className="header-background">Hi, I'm Mateo</span>
       </h1>
