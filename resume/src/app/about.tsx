@@ -1,8 +1,8 @@
 export function About() {
     return (
-        <div id="aboutSection" className="resumeBasic">
+        <div id="about" className="resumeBasic">
             <h1 className="resumeBasic-header">
-                <span className="bg-[#DFC5FE] px-2 pb-2"> about me </span>
+                <span className="px-2 pb-2"> about me </span>
             </h1>
             <div className="resumeBasic-text">
                 <p className="resumeBasic-para">

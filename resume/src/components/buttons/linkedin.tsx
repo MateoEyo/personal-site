@@ -1,4 +1,4 @@
-import { BasicButton } from "./basic";
+import { BasicButton } from "./buttons";
 
 export function LinkedIn() {
     return (

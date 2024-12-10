@@ -1,3 +1,4 @@
+import { Navbar } from '../components/navbar/navbar';
 import About from './about';
 import Contact from './contact';
 import Experience from './experience';
@@ -6,6 +7,7 @@ import Landing from './landing';
 export function App() {
   return (
     <div className='flex flex-col'>
+      <Navbar />
       <Landing title="resume" />
       <About />
       <Experience />

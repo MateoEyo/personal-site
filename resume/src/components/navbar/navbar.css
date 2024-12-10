@@ -1,0 +1,30 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 3fr 14fr 3fr;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1em; /* 16px */
+    border-bottom-width: 2px;
+    border-color: black;
+    background-color: white;
+}
+
+.nav-item-container {
+    display: inline;
+    padding-top: 1em;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0.25em;
+    min-width: 6rem; /* 96px */
+    border-color: transparent;
+    border-bottom-width: 2px;
+    transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+    border-color: black;
+    border-bottom-width: 1px;
+}
