@@ -19,6 +19,6 @@ export function BasicButton({ label, image, imageAlt }: BasicButtonProps) {
 
 export function Toggle() {
   return (
-    <input type="checkbox" className="toggle"></input>
+    <input type="checkbox" className="toggle" />
   );
 }
