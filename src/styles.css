@@ -7,3 +7,25 @@
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+body.theme-dark {
+  --dark-text: #292929;
+  --light-text: #f9f8f8;
+  --dark-background: #2f4550;
+  --light-background: #586f7c;
+  --accent: #b8dbd9;
+  --button-border: #b8dbd9;
+}
+
+body.theme-light {
+  --dark-text: #5e4b56;
+  --light-text: #5e4b56;
+  --dark-background: #dbe7e4;
+  --light-background: #eddcd2;
+  --accent: #dbe7e4;
+  --button-border: #5e4b56;
+}
+
+body {
+  background-color: var(--dark-background);
+}

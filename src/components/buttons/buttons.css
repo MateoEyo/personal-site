@@ -4,7 +4,7 @@
   width: 180px;
   padding: 6px;
   height: 50px;
-  color: rgb(51, 51, 51);
+  color: var(--dark-text);
   text-align: center;
   border: 2px solid rgb(51, 51, 51);
   overflow: hidden;
@@ -38,7 +38,7 @@
 }
 
 .btn-contact:hover {
-  background-color: #DFC5FE;
+  background-color: #dfc5fe;
   transition-duration: 300ms;
 }
 
@@ -60,7 +60,7 @@
   transition-duration: 300ms;
 }
 
-/* From Uiverse.io by cuzpq */ 
+/* From Uiverse.io by cuzpq */
 .toggle {
   --toggle-size: 8px;
   -webkit-appearance: none;
@@ -69,7 +69,14 @@
   appearance: none;
   width: 6.25em;
   height: 3.125em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(50%, #efefef),
+      color-stop(50%, #2a2a2a)
+    )
+    no-repeat;
   background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
   background-size: 205%;
@@ -84,13 +91,20 @@
 }
 
 .toggle::before {
-  content: "";
+  content: '';
   width: 2.25em;
   height: 2.25em;
   position: absolute;
   top: 0.438em;
   left: 0.438em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(50%, #efefef),
+      color-stop(50%, #2a2a2a)
+    )
+    no-repeat;
   background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
   background-size: 205%;

@@ -17,8 +17,22 @@ export function BasicButton({ label, image, imageAlt }: BasicButtonProps) {
   );
 }
 
-export function Toggle() {
+export interface ToggleProps {
+  isOn: boolean;
+  onChange: (isOn: boolean) => void;
+}
+
+export function Toggle(props: ToggleProps) {
+  const { isOn, onChange } = props;
+
   return (
-    <input type="checkbox" className="toggle" />
+    <input
+      type="checkbox"
+      className="toggle"
+      checked={isOn}
+      onChange={(e) => {
+        onChange(e.target.checked);
+      }}
+    />
   );
 }
