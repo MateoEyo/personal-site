@@ -8,8 +8,8 @@ export function ContactMe() {
                 </label>
                 <div className="formInputSec">
                     <input 
-                    className="formInput" 
-                    id="contact-name" name="contact-name" type="text" />
+                        className="formInput" 
+                        id="contact-name" name="contact-name" type="text" />
                 </div>
             </div>
 
@@ -19,8 +19,8 @@ export function ContactMe() {
                 </label>
                 <div className="formInputSec">
                     <input 
-                    className="formInput" 
-                    id="contact-email" name="contact-email" type="text" />
+                        className="formInput" 
+                        id="contact-email" name="contact-email" type="text" />
                 </div>
             </div>
 
@@ -30,14 +30,14 @@ export function ContactMe() {
                 </label>
                 <div className="formInputSec">
                     <input 
-                    className="formInput" 
-                    id="contact-message" name="contact-message" type="text" />
+                        className="formInput" 
+                        id="contact-message" name="contact-message" type="text" />
                 </div>
             </div>
 
             <div className="formSubsection">
             <button className="btn-contact">
-                Button
+                Send message
             </button>
             </div>
       </form>
