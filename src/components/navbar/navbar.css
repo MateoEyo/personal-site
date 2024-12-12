@@ -1,6 +1,5 @@
 .navbar {
   display: grid;
-  grid-template-columns: 3fr 14fr 3fr;
   position: fixed;
   width: 100%;
   text-align: center;
@@ -11,7 +10,6 @@
 }
 
 .nav-item-container {
-  display: inline;
   padding-top: 1em;
 }
 
@@ -27,4 +25,38 @@
 .nav-item:hover {
   border-color: var(--dark-background);
   border-bottom-width: 1px;
+}
+
+@media (min-width: 481px) {
+  .navbar {
+    grid-template-columns: 3fr 14fr 3fr;
+  }
+
+  .nav-item-container {
+    display: inline;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+    background-color: var(--light-background);
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .nav-item {
+    font-size: 4em;
+  }
+
+  .nav-btn {
+    text-align: right;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
+    transition: 500ms;
+  }
 }
