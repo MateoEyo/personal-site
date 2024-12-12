@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Navbar } from '../components/navbar/navbar';
 import About from './about';
 import Contact from './contact';
@@ -5,9 +6,19 @@ import Experience from './experience';
 import Landing from './landing';
 
 export function App() {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(
+    () => localStorage.getItem('theme') === 'dark'
+  );
+
   return (
-    <div className='flex flex-col'>
-      <Navbar />
+    <div className={`app flex flex-col theme-${isDarkMode ? 'dark' : 'light'}`}>
+      <Navbar
+        isDarkMode={isDarkMode}
+        onIsDarkModeChange={(isDarkMode) => {
+          setIsDarkMode(isDarkMode);
+          localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }}
+      />
       <Landing title="resume" />
       <About />
       <Experience />
