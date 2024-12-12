@@ -6,19 +6,17 @@ import Experience from './experience';
 import Landing from './landing';
 
 export function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(
+    () => localStorage.getItem('theme') === 'dark'
+  );
 
   return (
-    <div className="flex flex-col">
+    <div className={`app flex flex-col theme-${isDarkMode ? 'dark' : 'light'}`}>
       <Navbar
         isDarkMode={isDarkMode}
         onIsDarkModeChange={(isDarkMode) => {
           setIsDarkMode(isDarkMode);
-
-          document.body.classList.remove('theme-light', 'theme-dark');
-          document.body.classList.add(
-            isDarkMode ? 'theme-dark' : 'theme-light'
-          );
+          localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
         }}
       />
       <Landing title="resume" />

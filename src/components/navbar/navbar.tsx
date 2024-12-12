@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Toggle } from '../buttons/buttons';
 import { scrollToSection } from '../functions/functions';
 
