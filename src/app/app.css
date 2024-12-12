@@ -56,8 +56,6 @@
   padding-left: 0.5rem; /* 8px */
   padding-right: 0.5rem; /* 8px */
   padding-bottom: 0.5rem; /* 8px */
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
   text-align: center;
   font-weight: 700;
 }
@@ -85,6 +83,11 @@
     padding-left: 2rem; /* 32px */
     padding-right: 2rem; /* 32px */
   }
+
+  .contact-header {
+    font-size: 5em;;
+    line-height: 1em; /* 36px */
+  }
 }
 
 @media (max-width: 480px) {
@@ -109,5 +112,10 @@
 
   .contact {
     grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .contact-header {
+    font-size: 2em;;
+    line-height: 0.5em; /* 36px */
   }
 }
