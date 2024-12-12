@@ -6,7 +6,7 @@
   text-align: center;
   padding: 1em; /* 16px */
   border-bottom-width: 2px;
-  border-color: black;
+  border-color: var(--dark-background);
   background-color: inherit;
 }
 
@@ -25,6 +25,6 @@
 }
 
 .nav-item:hover {
-  border-color: black;
+  border-color: var(--dark-background);
   border-bottom-width: 1px;
 }
