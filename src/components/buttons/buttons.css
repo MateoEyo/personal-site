@@ -29,6 +29,7 @@
 /* Contact button */
 
 .btn-contact {
+  color: black;
   background-color: white;
   font-weight: 600;
   padding-top: 0.5rem; /* 8px */
@@ -42,7 +43,7 @@
 }
 
 .btn-contact:hover {
-  background-color: #dfc5fe;
+  background-color:lightgray;
   transition-duration: 300ms;
 }
 
