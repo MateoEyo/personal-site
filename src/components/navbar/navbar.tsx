@@ -74,6 +74,7 @@ function openNav() {
   if (navbarElement !== null) {
     navbarElement.style.width = "100%";
     navbarElement.style.display = "inline";
+    navbarElement.style.transition = "500ms";
   }
 }
 
