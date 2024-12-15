@@ -10,13 +10,22 @@ export function App() {
     () => localStorage.getItem('theme') === 'dark'
   );
 
+  const [isMobile, setIsMobile] = useState<boolean>(
+    () => window.screen.width >= 480
+  )
+
   return (
-    <div className={`app flex flex-col theme-${isDarkMode ? 'dark' : 'light'}`}>
+    <div className={`app theme-${isDarkMode ? 'dark' : 'light'}`}>
       <Navbar
         isDarkMode={isDarkMode}
         onIsDarkModeChange={(isDarkMode) => {
           setIsDarkMode(isDarkMode);
           localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }}
+        isMobile={isMobile}
+        onIsMobile={(isMobile) => {
+          setIsMobile(isMobile);
+          window.screen.width >= 480;
         }}
       />
       <Landing title="resume" />

@@ -23,6 +23,8 @@
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light-background);
 }
 

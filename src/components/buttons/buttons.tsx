@@ -36,3 +36,8 @@ export function Toggle(props: ToggleProps) {
     />
   );
 }
+
+export interface MobileMenuProps {
+  isMobile: boolean;
+  onChange: (isMobile: boolean) => void;
+}
