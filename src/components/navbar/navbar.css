@@ -48,23 +48,15 @@
 }
 
 @media (min-width: 481px) {
-  .navbar {
-    
-  }
+
 
   .nav-item-container {
     display: inline;
   }
 
-  .nav-btn {
-    
-  }
 }
 
 @media (max-width: 480px) {
-  .navbar {
-    
-  }
 
   .nav-item {
     font-size: 4em;
