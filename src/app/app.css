@@ -113,17 +113,16 @@ body {
 /* Animations */
 .background-lines {
   position:absolute;
-  bottom: 75%;
   left: 0;
-  height: 2px;
+  height: 4px;
   width: 200px;
-  background-color: #FF369B;
+  background: linear-gradient(to right,#207bdf, #ff69b4);
   animation: animate-lines 6s linear infinite;
 }
 
 @keyframes animate-lines {
   0% {
-    left: 0;
+    left: 0%;
     transform: translate(-100%);
   }
   100% {
@@ -162,6 +161,10 @@ body {
     font-size: 5em;;
     line-height: 1em; /* 36px */
   }
+
+  .background-lines {
+    bottom: 57%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -191,5 +194,9 @@ body {
   .contact-header {
     font-size: 2em;;
     line-height: 0.5em; /* 36px */
+  }
+
+  .background-lines {
+    bottom: 50%;
   }
 }
