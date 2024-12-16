@@ -15,11 +15,11 @@ export function Navbar(props: NavbarProps) {
   return (
     <div>
       <div className={`navmenu theme-${isMobile ? 'mobile' : 'desktop'}`} onClick={openNav}>
-        <button className='btn-contact'>menu</button> 
+        <button className='btn-menu'>menu</button> 
       </div>
 
       <div id='nav' className={`navbar theme-${isMobile ? 'mobile' : 'desktop'}`}>
-        <div>
+        <div className='logo'>
           MM
           <div className='navmenu-close-btn'>
             <a href='#' className='close-btn' onClick={() => closeNav(isMobile)}/>
