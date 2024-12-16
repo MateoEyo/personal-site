@@ -10,8 +10,12 @@ export function App() {
     () => localStorage.getItem('theme') === 'dark'
   );
 
+  const isMobile = useIsMobile();
+    () => window.screen.width >= 480
+  )
+
   return (
-    <div className={`app flex flex-col theme-${isDarkMode ? 'dark' : 'light'}`}>
+    <div className={`app theme-${isDarkMode ? 'dark' : 'light'}`}>
       <Navbar
         isDarkMode={isDarkMode}
         onIsDarkModeChange={(isDarkMode) => {
