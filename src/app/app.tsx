@@ -10,7 +10,7 @@ export function App() {
     () => localStorage.getItem('theme') === 'dark'
   );
 
-  const [isMobile, setIsMobile] = useState<boolean>(
+  const isMobile = useIsMobile();
     () => window.screen.width >= 480
   )
 
