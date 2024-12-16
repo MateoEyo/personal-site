@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth
+}
+
 .app.theme-dark {
   --dark-text: white;
   --light-text: black;

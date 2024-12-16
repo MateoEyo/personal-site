@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--light-background);
+}
+
 .navbar.theme-desktop {
   display: grid;
   grid-template-columns: 3fr 14fr 3fr;
@@ -7,7 +11,6 @@
   padding: 1em; /* 16px */
   border-bottom-width: 2px;
   border-color: var(--dark-background);
-  background-color: inherit;
 }
 
 .navmenu.theme-desktop {

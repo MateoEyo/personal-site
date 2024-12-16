@@ -22,40 +22,40 @@ export function Navbar(props: NavbarProps) {
         <div>
           MM
           <div className='navmenu-close-btn'>
-            <a href='#' className='close-btn' onClick={closeNav}/>
+            <a href='#' className='close-btn' onClick={() => closeNav(isMobile)}/>
           </div>
         </div>
 
         <ul>
           <div className="nav-item-container">
             <button>
-              <li className="nav-item" onClick={() => {closeNav(); scrollToSection('home')}}>
+              <a href='#home' className="nav-item" onClick={() => closeNav(isMobile)}>
                 Home
-              </li>
+              </a>
             </button>
           </div>
 
           <div className="nav-item-container">
             <button>
-            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('about')}}>
+              <a href='#about' className="nav-item" onClick={() => closeNav(isMobile)}>
                 About
-              </li>
+              </a>
             </button>
           </div>
 
           <div className="nav-item-container">
             <button>
-            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('experience')}}>
+              <a href='#experience' className="nav-item" onClick={() => closeNav(isMobile)}>
                 Experience
-              </li>
+              </a>
             </button>
           </div>
 
           <div className="nav-item-container">
             <button>
-            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('contact')}}>
+              <a href='#contact' className="nav-item" onClick={() => closeNav(isMobile)}>
                 Contact
-              </li>
+              </a>
             </button>
           </div>
         </ul>
@@ -81,10 +81,12 @@ function openNav() {
   }
 }
 
-function closeNav() {
-  const elem = document.getElementById("nav");
+function closeNav(isMobile:boolean) {
+  if(isMobile) {
+    const elem = document.getElementById("nav");
 
-  if(elem !== null) {
-    elem.style.width = "0%"
+    if(elem !== null) {
+      elem.style.width = "0%"
+    }
   }
 }
