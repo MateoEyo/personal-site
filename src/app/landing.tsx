@@ -6,12 +6,12 @@ import { scrollToSection } from "../components/functions/functions";
 export function Landing({ title }: { title: string }) {
 
   return (
-    <header id="home" className="flex flex-col h-screen w-full items-center justify-center">
-      <h1 className="text-7xl p-4 pb-24 font-bold text-center">
+    <header id="home" className="landing">
+      <h1 className="landing-header">
         <span className="header-background">Hi, I'm Mateo</span>
       </h1>
-      <p className="text-2xl w-9/12 p-4 pb-24 text-center font-semibold">
-        <span className="p-2">Welcome to my page, let me tell you a bit about myself.</span>
+      <p className="landing-text">
+        <span className="p-2">Welcome to my page. Let me tell you a bit about myself.</span>
       </p>
       <div className="grid grid-cols-2 gap-4 p-4">
         <Github />
@@ -24,6 +24,7 @@ export function Landing({ title }: { title: string }) {
           </svg>
         </button>
       </div>
+      <div className="background-lines" />
     </header>
   );
 }
