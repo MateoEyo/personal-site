@@ -55,6 +55,10 @@
   border-bottom-width: 1px;
 }
 
+.logo {
+  margin: auto;
+}
+
 @media (min-width: 481px) {
 
   .nav-item-container {
@@ -63,6 +67,11 @@
 
   .navmenu-close-btn {
     display: none;
+  }
+
+  .logo {
+    font-weight: 700;
+    color:hotpink;
   }
 }
 
@@ -82,5 +91,12 @@
     padding-left: 1.25em;
     padding-right: 1.5em;
     padding-top: 2.5em;
+  }
+
+  .logo {
+    padding-left: 0.25em;
+    font-size: 4em;
+    color:hotpink;
+    font-weight: 700;
   }
 }
