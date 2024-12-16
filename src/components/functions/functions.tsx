@@ -2,11 +2,7 @@
 
 export function scrollToSection(sectionID:string) {
 
-document.getElementById(sectionID)?.scrollIntoView({
+    document.getElementById(sectionID)?.scrollIntoView({
         behavior: 'smooth'
     });
-}
-
-export function toggleDarkMode() {
-    
 }

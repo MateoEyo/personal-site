@@ -22,11 +22,6 @@ export function App() {
           setIsDarkMode(isDarkMode);
           localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
         }}
-        isMobile={isMobile}
-        onIsMobile={(isMobile) => {
-          setIsMobile(isMobile);
-          window.screen.width >= 480;
-        }}
       />
       <Landing title="resume" />
       <About />

@@ -1,5 +1,6 @@
-.navbar {
+.navbar.theme-desktop {
   display: grid;
+  grid-template-columns: 3fr 14fr 3fr;
   position: fixed;
   width: 100%;
   text-align: center;
@@ -9,24 +10,28 @@
   background-color: inherit;
 }
 
-.navbar.theme-desktop {
-  grid-template-columns: 3fr 14fr 3fr;
-}
-
 .navmenu.theme-desktop {
   display: none;
 }
 
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .navbar.theme-mobile {
-  position: absolute;
-  right: -500px;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
   background-color: var(--light-background);
-  height: 100vh;
-  z-index: 1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .navmenu.theme-mobile {
-  display: block;
+  padding-top: 1em;
+  padding-right: 1em;
+  float: right;
 }
 
 .nav-item-container {
@@ -49,11 +54,13 @@
 
 @media (min-width: 481px) {
 
-
   .nav-item-container {
     display: inline;
   }
 
+  .navmenu-close-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -66,6 +73,11 @@
     text-align: right;
     padding-right: 1.5em;
     padding-top: 1.5em;
-    
+  }
+
+  .theme-toggle {
+    padding-left: 1.25em;
+    padding-right: 1.5em;
+    padding-top: 2.5em;
   }
 }

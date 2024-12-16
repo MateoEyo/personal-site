@@ -1,79 +1,90 @@
+import { useEffect, useState } from 'react';
 import { Toggle } from '../buttons/buttons';
 import { scrollToSection } from '../functions/functions';
+import { useIsMobile } from '../functions/screen-size';
 
 export interface NavbarProps {
   isDarkMode: boolean;
   onIsDarkModeChange: (isDarkMode: boolean) => void;
-  isMobile: boolean;
-  onIsMobile: (isMobile: boolean) => void;
 }
 
 export function Navbar(props: NavbarProps) {
-  const { isDarkMode, onIsDarkModeChange, isMobile, onIsMobile } = props;
+  const { isDarkMode, onIsDarkModeChange } = props;
+  const isMobile = useIsMobile();
 
   return (
-    <div className={`navbar theme-${isMobile ? 'desktop' : 'mobile'}`}>
-      <div className={`navmenu theme-${isMobile ? 'desktop' : 'mobile'}`}>
-        <button className='btn-contact' onClick={openNav}>menu</button> 
-      </div>
-      <div>
-        logo
+    <div>
+      <div className={`navmenu theme-${isMobile ? 'mobile' : 'desktop'}`} onClick={openNav}>
+        <button className='btn-contact'>menu</button> 
       </div>
 
-      <ul>
-        <div className="nav-item-container">
-          <button>
-            <li className="nav-item" onClick={() => scrollToSection('home')}>
-              Home
-            </li>
-          </button>
+      <div id='nav' className={`navbar theme-${isMobile ? 'mobile' : 'desktop'}`}>
+        <div>
+          MM
+          <div className='navmenu-close-btn'>
+            <a href='#' className='close-btn' onClick={closeNav}/>
+          </div>
         </div>
 
-        <div className="nav-item-container">
-          <button>
-            <li className="nav-item" onClick={() => scrollToSection('about')}>
-              About
-            </li>
-          </button>
-        </div>
+        <ul>
+          <div className="nav-item-container">
+            <button>
+              <li className="nav-item" onClick={() => {closeNav(); scrollToSection('home')}}>
+                Home
+              </li>
+            </button>
+          </div>
 
-        <div className="nav-item-container">
-          <button>
-            <li
-              className="nav-item"
-              onClick={() => scrollToSection('experience')}
-            >
-              Experience
-            </li>
-          </button>
-        </div>
+          <div className="nav-item-container">
+            <button>
+            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('about')}}>
+                About
+              </li>
+            </button>
+          </div>
 
-        <div className="nav-item-container">
-          <button>
-            <li className="nav-item" onClick={() => scrollToSection('contact')}>
-              Contact
-            </li>
-          </button>
-        </div>
-      </ul>
+          <div className="nav-item-container">
+            <button>
+            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('experience')}}>
+                Experience
+              </li>
+            </button>
+          </div>
 
-      <div>
-        <Toggle
-          isOn={isDarkMode}
-          onChange={(isOn) => {
-            onIsDarkModeChange(isOn);
-          }}
-        />
+          <div className="nav-item-container">
+            <button>
+            <li className="nav-item" onClick={() => {closeNav(); scrollToSection('contact')}}>
+                Contact
+              </li>
+            </button>
+          </div>
+        </ul>
+
+        <div className='theme-toggle'>
+          <Toggle
+            isOn={isDarkMode}
+            onChange={(isOn) => {
+              onIsDarkModeChange(isOn);
+            }}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 function openNav() {
-  const navbarElement = document.getElementById('navbar');
-  if (navbarElement !== null) {
-    navbarElement.style.width = "100%";
-    navbarElement.style.display = "inline";
-    navbarElement.style.transition = "500ms";
+  const elem = document.getElementById("nav");
+
+  if(elem !== null) {
+    elem.style.width = "100%"
+  }
+}
+
+function closeNav() {
+  const elem = document.getElementById("nav");
+
+  if(elem !== null) {
+    elem.style.width = "0%"
   }
 }
