@@ -64,6 +64,9 @@
 
 /* Down arrow button */
 .btn-down-arrow {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   position: absolute;
   bottom: 0px;
   padding-top: 1rem;
