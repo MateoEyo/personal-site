@@ -6,7 +6,7 @@ export function Contact() {
         <h1 className="contact-header">
           have a question?
         </h1>
-        <div className="resumeBasic-text">
+        <div className="sec-text">
           <ContactMe />
         </div>
       </div>

@@ -1,11 +1,11 @@
 export function Experience() {
     return (
-    <div id="experience" className="resumeBasic">
-      <h1 className="resumeBasic-header">
+    <div id="experience" className="sec">
+      <h1 className="sec-header">
         <span className="px-2 pb-2"> experience </span>
       </h1>
-      <div className="resumeBasic-text">
-        <div className="resumeBasic-para">
+      <div className="sec-text">
+        <div className="sec-para">
           {/* Product Ownership part */}
           <p className="text-3xl pb-2">
             Education
@@ -16,7 +16,7 @@ export function Experience() {
           </p>
         </div>
         {/* QA part */}
-        <div className="resumeBasic-para">
+        <div className="sec-para">
           <p className="text-3xl pb-2">
             Agile Methodologies
           </p>
@@ -26,7 +26,7 @@ export function Experience() {
           </p>
         </div>
         {/* Software Engineer part */}
-        <div className="resumeBasic-para">
+        <div className="sec-para">
           <p className="text-3xl pb-2">
             Software Engineering
           </p>
