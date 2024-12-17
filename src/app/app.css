@@ -139,9 +139,13 @@ body {
 
 /* Media queries */
 
-@media (min-width: 481px) {
+@media (min-width: 821px) {
   .sec {
     grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .sec-header {
+    font-size: 3em;
   }
 
   .sec-text {
@@ -168,7 +172,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 820px) {
   .sec {
     grid-template-rows: auto minmax(0, 1fr);
   }

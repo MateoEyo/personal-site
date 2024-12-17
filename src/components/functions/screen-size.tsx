@@ -36,7 +36,7 @@ export function useIsScreenWidthInrange(min: number, max: number) {
     return matches;
 }
 
-export function useIsMobile(cutoff = 480) {
+export function useIsMobile(cutoff = 820) {
     const isMobile = useIsScreenWidthAtMost(cutoff);
     return isMobile;
 }
