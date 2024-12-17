@@ -24,7 +24,6 @@ export function Landing({ title }: { title: string }) {
           </svg>
         </button>
       </div>
-      <div className="background-lines" />
     </header>
   );
 }
