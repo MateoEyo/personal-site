@@ -2,7 +2,7 @@ export function Experience() {
     return (
     <div id="experience" className="sec">
       <h1 className="sec-header">
-        <span className="px-2 pb-2"> experience </span>
+        <span className="experience-header"> experience </span>
       </h1>
       <div className="sec-text">
         <div className="sec-para">

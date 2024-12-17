@@ -2,7 +2,7 @@ export function About() {
     return (
         <div id="about" className="sec">
             <h1 className="sec-header">
-                <span className="px-2 pb-2"> about me </span>
+                <span className="about-header"> about me </span>
             </h1>
             <div className="sec-text">
                 <p className="sec-para">

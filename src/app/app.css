@@ -8,22 +8,22 @@ body {
 }
 
 .app.theme-dark {
-  --dark-text: white;
-  --light-text: black;
-  --dark-background: white;
-  --light-background: black;
+  --dark-text: #FAF9F6;
+  --light-text: #121212;
+  --dark-background: #FAF9F6;
+  --light-background: #121212;
   --accent: #b8dbd9;
-  --button-border: white;
+  --button-border: #FAF9F6;
   --img-invert: invert(1);
 }
 
 .app.theme-light {
-  --dark-text: black;
-  --light-text: white;
-  --dark-background: black;
-  --light-background: white;
+  --dark-text: #121212;
+  --light-text: #FAF9F6;
+  --dark-background: #121212;
+  --light-background: #FAF9F6;
   --accent: #dbe7e4;
-  --button-border: black;
+  --button-border: #121212;
   --img-invert: invert(0);
 }
 
@@ -51,6 +51,8 @@ body {
   line-height: 2.25rem; /* 36px */
   text-align: center;
   font-weight: 700;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .sec-text {
@@ -62,14 +64,6 @@ body {
 
 .sec-para {
   padding-bottom: 1.5rem;
-}
-
-.contact-header {
-  padding-left: 0.5rem; /* 8px */
-  padding-right: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
-  text-align: center;
-  font-weight: 700;
 }
 
 /* Header */
@@ -108,6 +102,18 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-header {
+  color: #207bdf;
+}
+
+.experience-header {
+  color: #FF369B;
+}
+
+.contact-header {
+  color: #30CF34;
 }
 
 /* Animations */
@@ -157,11 +163,6 @@ body {
     padding-right: 2rem; /* 32px */
   }
 
-  .contact-header {
-    font-size: 5em;;
-    line-height: 1em; /* 36px */
-  }
-
   .background-lines {
     bottom: 57%;
   }
@@ -189,11 +190,6 @@ body {
 
   .contact {
     grid-template-rows: auto minmax(0, 1fr);
-  }
-
-  .contact-header {
-    font-size: 2em;;
-    line-height: 0.5em; /* 36px */
   }
 
   .background-lines {
