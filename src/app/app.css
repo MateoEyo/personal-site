@@ -7,7 +7,7 @@ body {
   max-width: 100%;
 }
 
-.app.theme-dark {
+.theme-dark {
   --dark-text: #faf9f6;
   --light-text: #121212;
   --dark-background: #faf9f6;
@@ -17,7 +17,7 @@ body {
   --img-invert: invert(1);
 }
 
-.app.theme-light {
+.theme-light {
   --dark-text: #121212;
   --light-text: #faf9f6;
   --dark-background: #121212;

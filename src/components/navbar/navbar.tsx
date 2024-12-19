@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
 import { Toggle } from '../buttons/buttons';
-import { scrollToSection } from '../functions/functions';
 import { useIsMobile } from '../functions/screen-size';
 
 export interface NavbarProps {
@@ -14,22 +12,32 @@ export function Navbar(props: NavbarProps) {
 
   return (
     <div>
-      <div className={`navmenu theme-${isMobile ? 'mobile' : 'desktop'}`} onClick={openNav}>
-        <button className='btn-menu'>menu</button> 
+      <div
+        className={`navmenu theme-${isMobile ? 'mobile' : 'desktop'}`}
+        onClick={openNav}
+      >
+        <button className="btn-menu">menu</button>
       </div>
 
-      <div id='nav' className={`navbar theme-${isMobile ? 'mobile' : 'desktop'}`}>
-        <div className='logo'>
+      <div
+        id="nav"
+        className={`navbar theme-${isMobile ? 'mobile' : 'desktop'}`}
+      >
+        <div className="logo">
           MM
-          <div className='navmenu-close-btn'>
-            <a href='#' className='close-btn' onClick={() => closeNav(isMobile)}/>
+          <div className="navmenu-close-btn">
+            <button className="close-btn" onClick={() => closeNav(isMobile)} />
           </div>
         </div>
 
         <ul>
           <div className="nav-item-container">
             <button>
-              <a href='#home' className="nav-item" onClick={() => closeNav(isMobile)}>
+              <a
+                href="#home"
+                className="nav-item"
+                onClick={() => closeNav(isMobile)}
+              >
                 Home
               </a>
             </button>
@@ -37,7 +45,11 @@ export function Navbar(props: NavbarProps) {
 
           <div className="nav-item-container">
             <button>
-              <a href='#about' className="nav-item" onClick={() => closeNav(isMobile)}>
+              <a
+                href="#about"
+                className="nav-item"
+                onClick={() => closeNav(isMobile)}
+              >
                 About
               </a>
             </button>
@@ -45,7 +57,11 @@ export function Navbar(props: NavbarProps) {
 
           <div className="nav-item-container">
             <button>
-              <a href='#experience' className="nav-item" onClick={() => closeNav(isMobile)}>
+              <a
+                href="#experience"
+                className="nav-item"
+                onClick={() => closeNav(isMobile)}
+              >
                 Experience
               </a>
             </button>
@@ -53,14 +69,18 @@ export function Navbar(props: NavbarProps) {
 
           <div className="nav-item-container">
             <button>
-              <a href='#contact' className="nav-item" onClick={() => closeNav(isMobile)}>
+              <a
+                href="#contact"
+                className="nav-item"
+                onClick={() => closeNav(isMobile)}
+              >
                 Contact
               </a>
             </button>
           </div>
         </ul>
 
-        <div className='theme-toggle'>
+        <div className="theme-toggle">
           <Toggle
             isOn={isDarkMode}
             onChange={(isOn) => {
@@ -74,19 +94,19 @@ export function Navbar(props: NavbarProps) {
 }
 
 function openNav() {
-  const elem = document.getElementById("nav");
+  const elem = document.getElementById('nav');
 
-  if(elem !== null) {
-    elem.style.width = "100%"
+  if (elem !== null) {
+    elem.style.width = '100%';
   }
 }
 
-function closeNav(isMobile:boolean) {
-  if(isMobile) {
-    const elem = document.getElementById("nav");
+function closeNav(isMobile: boolean) {
+  if (isMobile) {
+    const elem = document.getElementById('nav');
 
-    if(elem !== null) {
-      elem.style.width = "0%"
+    if (elem !== null) {
+      elem.style.width = '0%';
     }
   }
 }

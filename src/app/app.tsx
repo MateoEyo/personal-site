@@ -4,6 +4,7 @@ import About from './about';
 import Contact from './contact';
 import Experience from './experience';
 import Landing from './landing';
+import { FadeInSection } from '../components/functions/fade';
 
 export function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(
@@ -19,10 +20,20 @@ export function App() {
           localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
         }}
       />
+
       <Landing title="resume" />
-      <About />
-      <Experience />
-      <Contact />
+
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Experience />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
     </div>
   );
 }
