@@ -1,16 +1,14 @@
-import { ContactMe } from "../components/forms/contact-me";
+import { ContactMe } from '../components/forms/contact-me';
 
 export function Contact() {
-    return (
-      <div id="contact" className="sec">
-        <h1 className="sec-header contact-header">
-          have a question?
-        </h1>
-        <div className="sec-text">
-          <ContactMe />
-        </div>
+  return (
+    <div id="contact" className="sec">
+      <h1 className="sec-header contact-header">have a question?</h1>
+      <div className="sec-text contact-text">
+        <ContactMe />
       </div>
-    );
-  }
-  
-  export default Contact;
+    </div>
+  );
+}
+
+export default Contact;
