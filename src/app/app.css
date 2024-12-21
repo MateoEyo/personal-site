@@ -1,13 +1,14 @@
-html {
-  scroll-behavior: smooth;
+html:has(.app.theme-light) {
+  --dark-text: #121212;
+  --light-text: #faf9f6;
+  --dark-background: #121212;
+  --light-background: #faf9f6;
+  --accent: #dbe7e4;
+  --button-border: #121212;
+  --img-invert: invert(0);
 }
 
-body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-.theme-dark {
+html:has(.app.theme-dark) {
   --dark-text: #faf9f6;
   --light-text: #121212;
   --dark-background: #faf9f6;
@@ -17,14 +18,14 @@ body {
   --img-invert: invert(1);
 }
 
-.theme-light {
-  --dark-text: #121212;
-  --light-text: #faf9f6;
-  --dark-background: #121212;
-  --light-background: #faf9f6;
-  --accent: #dbe7e4;
-  --button-border: #121212;
-  --img-invert: invert(0);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: var(--light-background);
 }
 
 * {
