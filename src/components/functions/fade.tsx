@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function FadeInSection(props: { children?: React.ReactNode }) {
-  const [isVisible, setVisible] = React.useState(true);
+  const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -11,12 +11,15 @@ export function FadeInSection(props: { children?: React.ReactNode }) {
     }
 
     const observer = new IntersectionObserver(([entry]) => {
-      setVisible(entry.isIntersecting);
+      if(entry.isIntersecting) {
+        setVisible(entry.isIntersecting);
+        observer.disconnect();
+      }
     });
 
     observer.observe(domEl);
 
-    return () => {
+    return () => { 
       observer.disconnect();
     };
   }, []);
