@@ -19,9 +19,6 @@
   outline-offset: 1px;
   outline-color: #d1d5db;
   width: 100%;
-}
-
-.formInput[type='text'] {
   color: black;
   font-weight: 400;
 }
