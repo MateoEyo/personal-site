@@ -25,6 +25,7 @@ export default defineConfig({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
+    assetsDir: '.',
     outDir: './dist/resume',
     emptyOutDir: true,
     reportCompressedSize: true,
