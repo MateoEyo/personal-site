@@ -20,6 +20,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -30,7 +32,7 @@ jobs:
       - run: npm test
 
       - name: Upload static files as artifact
-        id: build-artifacts
+        id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
           path: dist/resume/
@@ -43,5 +45,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: build-artifacts
+        id: deployment
         uses: actions/deploy-pages@v4
