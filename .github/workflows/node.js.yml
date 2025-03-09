@@ -30,7 +30,7 @@ jobs:
       - run: npm test
 
       - name: Upload static files as artifact
-        id: deployment
+        id: build-artifacts
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
           path: dist/resume/
@@ -43,5 +43,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: build-artifacts
         uses: actions/deploy-pages@v4
