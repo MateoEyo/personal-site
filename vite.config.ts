@@ -6,6 +6,7 @@ import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
 export default defineConfig({
   root: __dirname,
+  base: '/personal-site',
   cacheDir: './node_modules/.vite/resume',
   server: {
     port: 4200,
@@ -25,7 +26,6 @@ export default defineConfig({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    assetsDir: 'personal-site/assets',
     outDir: './dist/resume',
     emptyOutDir: true,
     reportCompressedSize: true,
