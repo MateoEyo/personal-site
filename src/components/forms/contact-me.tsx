@@ -1,44 +1,12 @@
 export function ContactMe() {
   return (
-    <form>
-      <div className="formSubsection">
-        <label className="formLabel">Name</label>
-        <div className="formInputSec">
-          <input
-            className="formInput"
-            id="contact-name"
-            name="contact-name"
-            type="text"
-          />
-        </div>
-      </div>
-
-      <div className="formSubsection">
-        <label className="formLabel">Email</label>
-        <div className="formInputSec">
-          <input
-            className="formInput"
-            id="contact-email"
-            name="contact-email"
-            type="text"
-          />
-        </div>
-      </div>
-
-      <div className="formSubsection">
-        <label className="formLabel">Message</label>
-        <div className="formInputSec">
-          <textarea
-            className="formInput"
-            id="contact-message"
-            rows={5}
-          />
-        </div>
-      </div>
-
-      <div className="formSubsection">
-        <button className="btn-contact">Send message</button>
-      </div>
-    </form>
+    <div className="formSubsection">
+      <a
+        href="mailto:try@try.com?subject=Ask%20me%20a%20a%20question"
+        className="btn-contact"
+      >
+        Send me an email
+      </a>
+    </div>
   );
 }
