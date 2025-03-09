@@ -28,11 +28,10 @@ export function ContactMe() {
       <div className="formSubsection">
         <label className="formLabel">Message</label>
         <div className="formInputSec">
-          <input
-            className="formInput form-input-message"
+          <textarea
+            className="formInput"
             id="contact-message"
-            name="contact-message"
-            type="text"
+            rows={5}
           />
         </div>
       </div>
