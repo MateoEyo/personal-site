@@ -50,6 +50,12 @@ body {
   margin-inline: auto;
 }
 
+.sec-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .sec-header {
   font-size: 3em;
   line-height: 2.75rem;
@@ -183,10 +189,6 @@ body {
     align-items: center;
     padding-left: 2rem; /* 32px */
     padding-right: 2rem; /* 32px */
-  }
-
-  .contact-text {
-    min-width: 500px;
   }
 
   .background-lines {
