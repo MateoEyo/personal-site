@@ -8,14 +8,19 @@ export function Landing({ title }: { title: string }) {
   return (
     <header id="home" className="landing">
       <h1 className="landing-header">
-        <span className="header-background">Hi, I'm Mateo</span>
+        <span className="header-background">Mateo</span>
+        <span className="header-background">Matic</span>
       </h1>
       <p className="landing-text">
         <span className="p-2">Welcome to my page. Let me tell you a bit about myself.</span>
       </p>
-      <div className="grid grid-cols-2 gap-4 p-4">
-        <Github />
-        <LinkedIn />
+      <div className="sec-flex">
+        <div className="landing-button">
+          <Github />
+        </div>
+        <div className="landing-button">
+          <LinkedIn />
+        </div>
       </div>
       <div className="btn-down-arrow" >
         <button onClick={() => scrollToSection('about')}>

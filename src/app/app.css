@@ -83,18 +83,20 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
 .landing-header {
-  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14.5rem;
   line-height: 1;
   padding: 0rem;
   padding-bottom: 6rem;
+  padding-left: 2rem;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   background: -webkit-linear-gradient(#207bdf, #20dadf);
   background-clip: text;
   -webkit-background-clip: text;
@@ -113,6 +115,15 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.landing-buttons {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.landing-button {
+  padding: 1rem;
 }
 
 .about-header {
@@ -197,6 +208,12 @@ body {
 }
 
 @media (max-width: 820px) {
+
+  .landing-header {
+    font-size: 5.5rem;
+    text-align: center;
+    padding-left: 0rem;
+  }
   .sec {
     grid-template-rows: auto minmax(0, 1fr);
   }
