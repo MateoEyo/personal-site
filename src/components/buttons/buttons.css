@@ -70,13 +70,10 @@
 
 /* Down arrow button */
 .btn-down-arrow {
+  grid-area: 3 / 1 / 4 / 3;
+  display: inline-grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 150ms;

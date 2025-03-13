@@ -8,14 +8,33 @@ export function Landing({ title }: { title: string }) {
   return (
     <header id="home" className="landing">
       <h1 className="landing-header">
-        <span className="header-background">Hi, I'm Mateo</span>
+        <span className="header-background">Mateo</span>
+        <br></br>
+        <span className="header-background">Matic</span>
       </h1>
-      <p className="landing-text">
-        <span className="p-2">Welcome to my page. Let me tell you a bit about myself.</span>
-      </p>
-      <div className="grid grid-cols-2 gap-4 p-4">
-        <Github />
-        <LinkedIn />
+      <div className="landing-text">
+        <div className="slider-wrapper">
+          I am
+          <div className="slider">
+            <div className="slider-text-1">
+              an Engineer
+            </div>
+            <div className="slider-text-2">
+              a Product Owner 
+            </div>
+            <div className="slider-text-3">
+              an Agile Expert
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="landing-buttons">
+        <div className="landing-button">
+          <Github />
+        </div>
+        <div className="landing-button">
+          <LinkedIn />
+        </div>
       </div>
       <div className="btn-down-arrow" >
         <button onClick={() => scrollToSection('about')}>
