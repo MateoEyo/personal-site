@@ -6,16 +6,17 @@ export function About() {
             </h1>
             <div className="sec-text">
                 <p className="sec-para">
-                    I'm an agile expert and software engineer that is passionate about learning and becoming a better version of myself. 
-                    I strive to be curious, empathetic, and helpful to those around me.
+                    I am someone who wants to be a better person and find challenges that I can learn from. One way to do that is 
+                    to learn how to make this website, which I did with <span className="text-blue">React</span>,
+                    <span className="text-blue">NX</span>, and <span className="text-blue">Typescript</span>.
                 </p>
                 <p className="sec-para">
-                    When I'm not self-aggrandizing, I am also a musician that loves to play a wide variety of instruments, 
-                    although I would only consider myself good at about two of them. I listen to music every day, 
-                    <span className="italic"> try</span> to read everyday, and wish I could see more movies than I currently am.
+                    I was inspired by some incredible engineers in my life to build this website so I can catalogue my interests and projects. 
+                    It might be a bit bare at the moment, but I hope to dive into more challenges and use this page as a landing pad for 
+                    any and all projects that interest me.
                 </p>
                 <p>
-                    Lastly, I have a wonderful pair of pets, a dog and a cat, that I share with my family, whom I also love and care for dearly.
+                    Thanks for coming to my page, and please don't hesitate to send me an email via the email link at the bottom of this page.
                 </p>
             </div>
         </div>

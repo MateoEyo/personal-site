@@ -7,7 +7,7 @@ export function Experience() {
       <div className="sec-text sec-text-left">
         <div className="sec-para">
           {/* Product Ownership part */}
-          <p className="text-3xl pb-2">Education</p>
+          <p className="text-3xl pb-5">Education</p>
           <p>
             I have a Masters in Computer Science and certification of
             Cybersecurity from the University of Louisville and a Bachelors of
@@ -17,7 +17,7 @@ export function Experience() {
         </div>
         {/* QA part */}
         <div className="sec-para">
-          <p className="text-3xl pb-2">Agile Methodologies</p>
+          <p className="text-3xl pb-5">Agile Methodologies</p>
           <p>
             I am currently a Senior Product Owner with a Scrum Master
             certification from <a href="https://scrum.org">Scrum.org</a> and I
@@ -28,7 +28,7 @@ export function Experience() {
         </div>
         {/* Software Engineer part */}
         <div className="sec-para">
-          <p className="text-3xl pb-2">Software Engineering</p>
+          <p className="text-3xl pb-5">Software Engineering</p>
           <p>
             I have used Python, Java, and C++ throughout my career to develop
             internal tools, write automation, and implement projects in my

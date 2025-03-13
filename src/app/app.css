@@ -74,7 +74,7 @@ body {
 }
 
 .sec-para {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* Header */
@@ -134,6 +134,16 @@ body {
 
 .contact-header {
   color: #30cf34;
+}
+
+.contact {
+  padding-bottom: 5rem;
+}
+
+/* --- Colors --- */
+.text-blue {
+  color: #ffffff;
+  background-color: #207bdf;
 }
 
 /* Animations */
@@ -255,13 +265,7 @@ body {
     order: 1;
   }
 
-  .contact {
-    display: grid;
-    grid-template-columns: 10fr 10fr;
-    align-items: center;
-    padding-left: 2rem; /* 32px */
-    padding-right: 2rem; /* 32px */
-  }
+
 
   .background-lines {
     bottom: 57%;
@@ -294,6 +298,7 @@ body {
   
   .sec {
     grid-template-rows: auto minmax(0, 1fr);
+    justify-content: center;
   }
 
   .sec-header {
