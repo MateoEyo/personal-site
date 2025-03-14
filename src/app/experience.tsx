@@ -9,8 +9,8 @@ export function Experience() {
           {/* Product Ownership part */}
           <p className="text-3xl pb-5">Education</p>
           <p>
-            I have a Masters in Computer Science and certification of
-            Cybersecurity from the University of Louisville and a Bachelors of
+            I have a <span className="text-pink">Masters</span> in Computer Science and certification of
+            Cybersecurity from the University of Louisville and a <span className="text-pink">Bachelor's</span> of
             Science in Computer Science with a minor in Mathematics from the
             Univeristy of Kentucky.
           </p>

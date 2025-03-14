@@ -146,6 +146,12 @@ body {
   background-color: #207bdf;
 }
 
+.text-pink {
+  color: #ffffff;
+  background-color: #ff369b;
+}
+
+
 /* Animations */
 .background-lines {
   position: absolute;
