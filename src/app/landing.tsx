@@ -20,7 +20,7 @@ export function Landing({ title }: { title: string }) {
               an Engineer
             </div>
             <div className="slider-text-2">
-              a Product Owner 
+              a Hobbyist
             </div>
             <div className="slider-text-3">
               an Agile Expert
